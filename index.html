@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Développeur Web & Mobile | Designer Graphique</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+    <header style="background-color: #2c2e2e" >
+        <nav id="navbar" style="justify-content: space-evenly; gap: 30%;">
+            <div class="logo">
+                <h1>Just <span>DEV</span></h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="text-content">
+                <p id="intro" class="intro"></p>
+                <h1 id="title" class="title"></h1>
+                <h2 id="subtitle" class="subtitle"></h2>
+                <p id="description" class="description"></p>
+            </div>
+            
+            <div class="hero-image">
+                <div class="shape"></div>
+                <img src="./assets/images/Imo0.jpg" alt="Développeur Web & Mobile" class="profile-img">
+            </div>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Discutons de votre projet</a>
+            <a href="#projects" class="btn btn-secondary">Voir mes réalisations</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="scroll-text">Scroll</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="background-color: #2c2e2e;">Qui suis-je</span>
+                <h2 class="title" style="color: #2c2e2e;">À propos de moi</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="./assets/images/ima1.jpg" width="400px" height="400px" alt="Mon profil">
+                    <!-- <div class="experience-badge">
+                        <span class="number">3+</span>
+                        <span class="text">Années d'expérience</span>
+                    </div> -->
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Passionné de développement et de design</h3>
+                    <p>Je suis un créateur numérique polyvalent, fusionnant expertise technique et vision artistique pour donner vie à des solutions digitales percutantes. Mon approche combine rigueur technique et créativité pour répondre précisément aux besoins de chaque projet.</p>
+                    <p>Ma double compétence en développement et design me permet d'assurer une cohérence parfaite entre l'esthétique et la fonctionnalité. Je m'engage à créer des expériences utilisateur fluides, intuitives et visuellement captivantes.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value"><a href="mailto:contactjustinmondji@gmail.com?subject=Demande%20de%20contact&body=Bonjour%20Justin,%0AJe%20souhaite%20travailler%20avec%20vous." style="color: #2c2e2e;">contactjustinmondji@gmail.com</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Téléphone: </span>
+                            <span class="info-value"><a href="https://wa.me/22897791374?text=Bonjour%20Justin%2C%20je%20suis%20intéressé%20par%20votre%20profil" style="color: #2c2e2e;">+228 97791374</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Disponibilité:</span>
+                            <span class="info-value">Freelance / Projets</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <button class="btn btn-primary" id="downloadCV">Télécharger mon CV</button>
+                        <p id="downloadMessage" style="display: none; color: #f6b029; margin-top: 10px;">📥 Téléchargement en cours...</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container" >
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Ce que je maîtrise</span>
+                <h2 class="title">Mes compétences</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3>Développement Web</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <div class="skill-info">
+                                <h4>PHP</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-info">
+                                <h4>MySQL</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                            <div class="skill-info">
+                                <h4>Laravel</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                            <div class="skill-info">
+                                <h4>Wordpress</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Développement Mobile</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-info">
+                                <h4>Flutter</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-info">
+                                <h4>Dart</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-info">
+                                <h4>Firebase</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Design Graphique</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <div class="skill-info">
+                                <h4>Photoshop</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <div class="skill-info">
+                                <h4>Canva</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <div class="skill-info">
+                                <h4>Figma</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="background-color: #2c2e2e;">Ce que je propose</span>
+                <h2 class="title" style="color: #2c2e2e">Mes services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" >
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Création de sites web responsifs, ergonomiques et optimisés pour tous les appareils. Du site vitrine à la plateforme e-commerce complexe.</p>
+                    <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Développement d'applications mobiles natives et cross-platform pour iOS et Android, offrant des expériences utilisateur fluides et intuitives.</p>
+                    <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Design Graphique</h3>
+                    <p>Conception d'identités visuelles percutantes, de logos mémorables et de supports marketing qui captent l'attention et renforcent votre marque.</p>
+                    <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO & Optimisation</h3>
+                    <p>Amélioration de la visibilité de votre site sur les moteurs de recherche pour attirer un trafic qualifié et augmenter votre conversion.</p>
+                    <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Services de maintenance régulière, mises à jour et assistance technique pour garantir les performances et la sécurité de vos plateformes.</p>
+                    <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Conseil & Formation</h3>
+                    <p>Accompagnement stratégique sur vos projets digitaux et formation personnalisée pour vous rendre autonome sur la gestion de vos outils.</p>
+                    <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Mes réalisations</span>
+                <h2 class="title">Projets récents</h2>
+            </div>
+            
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-item" data-category="web" data-aos="fade-up">
+                    <div class="project-img">
+                        <img src="./assets/images/Ima2.png" alt="Bibliothèque en ligne">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bibliothèque en ligne</h3>
+                        <p>Plateforme complète de gestion de livres avec système de prêt et recommandations personnalisées.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="design" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img">
+                        <img src="./assets/images/Ima11.png" alt="Design Atelier de Menuiserie">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Atelier de Menuiserie</h3>
+                        <p>Identité visuelle et site web pour un artisan menuisier, mettant en valeur son savoir-faire et ses créations.</p>
+                        <div class="project-tags">
+                            <span>Design</span>
+                            <span>Photoshop</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img">
+                        <img src="./assets/images/Ima12.png" alt="Gestion d'Articles">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Système de Gestion d'Articles</h3>
+                        <p>Application web pour la gestion d'inventaire et le suivi des ventes avec tableau de bord analytique.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="design" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-img">
+                        <img src="./assets/images/Ima3.png" alt="Cave à Vin">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cave à Vin Premium</h3>
+                        <p>Site e-commerce élégant pour une cave à vin haut de gamme avec catalogue interactif et conseils d'experts.</p>
+                        <div class="project-tags">
+                            <span>Design</span>
+                            <span>UX/UI</span>
+                            <span>HTML/CSS</span>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-img">
+                        <img src="./assets/images/ima13.jpeg" alt="Application Fitness">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Application Fitness</h3>
+                        <p>Application mobile de suivi d'entraînement avec programmes personnalisés et suivi des progrès.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-img">
+                        <img src="./assets/images/Ima14.png" alt="Plateforme E-learning">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Plateforme E-learning</h3>
+                        <p>Solution complète pour la formation en ligne avec gestion de cours, quiz interactifs et suivi de progression.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="#contact" class="btn btn-primary">Discutons de votre projet</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" style="background-color: #2c2e2e;">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Ce qu'ils disent</span>
+                <h2 class="title">Témoignages clients</h2>
+            </div>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-item active">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <div class="testimonial-space"></div>
+                                <p class="testimonial-text">Un travail remarquable sur notre site e-commerce. Les délais ont été respectés et le résultat dépasse nos attentes. Une vraie compréhension de nos besoins et une exécution impeccable.</p>
+                                <div class="quote-icone"><i class="fas fa-quote-right"></i></div>
+                                <div class="testimonial-author">
+                                    <div class="author-img">
+                                        <img src="./assets/images/Ima10.jpg" alt="Client">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Marie Dupont</h4>
+                                        <p>Directrice, Cave à Vin Premium</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <div class="testimonial-space"></div>
+                                <p class="testimonial-text">La refonte de notre identité visuelle a transformé notre image de marque. Une créativité exceptionnelle alliée à une écoute attentive de nos besoins. Je recommande vivement ses services.</p>
+                                <div class="quote-icone"><i class="fas fa-quote-right"></i></div>
+                                <div class="testimonial-author">
+                                    <div class="author-img">
+                                        <img src="./assets/images/Ima7.jpg" alt="Client">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Thomas Martin</h4>
+                                        <p>Fondateur, Atelier de Menuiserie</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <div class="testimonial-space"></div>
+                                <p class="testimonial-text">Notre application mobile a connu un succès immédiat grâce à son design intuitif et ses fonctionnalités innovantes. Une collaboration professionnelle et agréable que nous renouvellerons sans hésiter.</p>
+                                <div class="quote-icone"><i class="fas fa-quote-right"></i></div>
+                                <div class="testimonial-author">
+                                    <div class="author-img">
+                                        <img src="./assets/images/ima8.jpeg" alt="Client">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Sophie Legrand</h4>
+                                        <p>CEO, FitnessPro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <div class="testimonial-space"></div>
+                                <p class="testimonial-text">Grâce à sa maîtrise technique et son sens du design, notre projet a pu voir le jour dans les meilleures conditions. Un professionnel qui sait allier esthétique et fonctionnalité avec brio.</p>
+                                <div class="quote-icone"><i class="fas fa-quote-right"></i></div>
+                                <div class="testimonial-author">
+                                    <div class="author-img">
+                                        <img src="./assets/images/Ima5.jpg" alt="Client">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Antoine Moreau</h4>
+                                        <p>Directeur Marketing, TechSolutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <div class="testimonial-space"></div>
+                                <p class="testimonial-text">Une collaboration exceptionnelle qui a dépassé toutes nos attentes. Sa vision créative, combinée à une approche méthodique, a permis de livrer un produit final qui fait l'unanimité parmi nos clients.</p>
+                                <div class="quote-icone"><i class="fas fa-quote-right"></i></div>
+                                <div class="testimonial-author">
+                                    <div class="author-img">
+                                        <img src="./assets/images/Ima6.jpg" alt="Client">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Claire Dubois</h4>
+                                        <p>Responsable Produit, Innovatech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <div class="testimonial-space"></div>
+                                <p class="testimonial-text">Un professionnalisme à toute épreuve et une capacité d'adaptation remarquable face aux défis techniques. Notre plateforme en ligne n'a jamais été aussi performante et esthétique.</p>
+                                <div class="quote-icone"><i class="fas fa-quote-right"></i></div>
+                                <div class="testimonial-author">
+                                    <div class="author-img">
+                                        <img src="./assets/images/ima4.jpg" alt="Client">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Lucas Bernard</h4>
+                                        <p>CTO, StartupInnovante</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                        <span class="dot" data-index="5"></span>
+                    </div>
+                    <button class="testimonial-next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="background-color: #2c2e2e;">Commençons à travailler ensemble</span>
+                <h2 class="title" style="color: #2c2e2e;">Me contacter</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Adresse</h3>
+                            <p>Lomé, TOGO</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <a href="mailto:contactjustinmondji@gmail.com" style="color: #2c2e2e;">contactjustinmondji@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Téléphone</h3>
+                            <p ><a href="tel:+22897791374" style="color: #2c2e2e;">+228 97791374</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Disponibilité</h3>
+                            <p>Lundi - Samedi, 8h - 20h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/justin-mondji-976b1a303/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Dev14Justin" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61560037770054" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/JustinMondji14" class="social-link"><i class="fab fa-x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="tel" name="tel" placeholder="Votre number de Téléphone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                    <div id="formResponse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="background-color: #2c2e2e;">Où me trouver</span>
+                <h2 class="title" style="color: #2c2e2e;">Ma localisation</h2>
+            </div>
+            <div class="map-container" data-aos="zoom-in">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.890526568975!2d1.1871199195312476!3d6.1734923338077135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e391ceb9e757%3A0x2788676b2d71263a!2sComplexe%20scolaire%20mondji%20la%20bergere!5e0!3m2!1sfr!2stg!4v1746103361967!5m2!1sfr!2stg" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Portfolio de<span> Justin MONDJI</span></h2>
+                    <p>Je vous accompagne dans la transformation de vos idées en solutions numériques performantes et sur mesure, alliant design moderne, technologies innovantes et expérience utilisateur optimisée.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 style="color: white;">Liens rapides</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3 style="color: white;">Newsletter</h3>
+                    <p>Abonnez-vous pour recevoir mes dernières actualités et conseils.</p>
+                    <form id="newsletterForm">
+                        <input type="email" name="newsletter-email" placeholder="Votre email">
+                        <button type="submit" class="btn btn-primary">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portfolio Justin MONDJI. Tous droits réservés.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/justin-mondji-976b1a303/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Dev14Justin"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61560037770054"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/JustinMondji14"><i class="fab fa-x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
